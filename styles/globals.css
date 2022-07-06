@@ -1,3 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
 html,
 body {
   padding: 0;
@@ -13,4 +20,36 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.code-blocks{
+  max-width: 760px;
+  background: #1e293b;
+  font-family: 'Source Code Pro', monospace;
+  color: #62A3C6;
+  padding: 1.5em 3em;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content{
+  color: white;
+}
+
+.heading{
+  font-size: 2rem;
+  padding: .5em 0em;
+}
+
+.heading2{
+  font-size: 1.5rem;
+  padding: .5em 0em;
+}
+
+.pre{
+  padding: 1.5em 1em;
+  line-height: 2em;
 }
