@@ -3,7 +3,7 @@ import {GraphQLClient, gql} from 'graphql-request'
 import styles from '../../styles/Home.module.css'
 
 
-const graphcms = new GraphQLClient("https://api-ap-south-1.graphcms.com/v2/cl56mro663y7o01uee590bevl/master")
+const graphcms = new GraphQLClient(process.env.GRAPH_KEY)
 
 const QUERY = gql`
     query Post($slug: String!){
